@@ -8,7 +8,7 @@ router.get('/', function(req, res){
    });
 });
 
-router.get('/header', function(req, res){
+router.get('404', function(req, res){
    res.render('header', {
        main_text: 'NA, Testing'
    })
