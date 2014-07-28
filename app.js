@@ -1,4 +1,5 @@
 var express = require('express');
+var i18n = require('i18n');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
@@ -18,13 +19,24 @@ app.set('view engine', 'html');
     app.set('view engine', 'ejs');
 * */
 
+i18n.configure({
+    // setup some locales - other locales default to en silently
+    locales:['en', 'ru'],
+
+    // where to store json files - defaults to './locales' relative to modules directory
+    directory: __dirname + '/locales',
+
+    cookie : 'locale'
+});
+
+app.use(i18n.init);
+//console.log( i18n.__("Hello!") );
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', routes);
 app.use('/users', users);
 
