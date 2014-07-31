@@ -16,7 +16,18 @@
 
 </head>
 <body>
-<%- partial ('header.ejs') %>
-<%- body %>
+<%- include header.ejs %>
+<div class="title">
+    <%= title %>
+</div>
+<ul>
+    <% for(var i=0; i<supplies.length; i++) {%>
+    <li><%= supplies[i] %></li>
+    <% } %>
+</ul>
+<div><%= __('AAAA') %></div>
+<input type="button" class="change-lang" value='ru' />
+<input type="button" class="change-lang" value='en' />
+<%- include scripts.ejs %>
 </body>
 </html>

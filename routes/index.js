@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var port    =   process.env.PORT || 8080;
 
 router.get('/', function(req, res){
    res.setLocale(req.cookies.lang);

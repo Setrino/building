@@ -40,12 +40,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
+
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
+
+app.on('uncaughtException', function (err) {
+    console.error('uncaughtException:', err.message)
+    console.error(err.stack)
+    process.exit(1)})
 
 /// error handlers
 

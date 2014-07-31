@@ -1,34 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>Real Estate</title>
-        <meta name="description" content="Real Estate Company at your service">
-        <meta name="author" content="Setrino">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        <!-- styles -->
-        <link href="css/style.css" rel="stylesheet">
-
+        <%- include head.ejs %>
     </head>
     <body>
-        <%- include header.ejs %>
-        <div class="title">
-            <%= title %>
+    <div class="container">
+        <div class="km-menu">
+            <header class="slidy">
+                <ul id="navToggle" class="burger slidy">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="clear"></div>
+                <div class="jiliki"><img class="logo-smartphone" src="images/logo-smartphone.png" alt="logo FREE"></div>
+            </header>
         </div>
-        <ul>
-            <% for(var i=0; i<supplies.length; i++) {%>
-            <li><%= supplies[i] %></li>
-            <% } %>
-        </ul>
-        <div><%= __('AAAA') %></div>
-        <input type="button" class="change-lang" value='ru' />
-        <input type="button" class="change-lang" value='en' />
-        <%- include scripts.ejs %>
+        <div class="expand">
+            <header class="big-header">
+                <a href="#home"><img class="logo" src="images/logo.png" alt="logotype FREE FFO - Fiduciaire & Family Office"/></a>
+                <nav class="menu" id="menu">
+                    <a class="clicked" href="#home">Home</a><br>
+                    <a href="#foffice">Family Office</a><br>
+                    <a href="#immobilier">Immobilier</a><br>
+                    <a href="#comptabilite">Comptabilité</a><br>
+                    <a href="#fiscalite">Fiscalité</a><br>
+                    <a href="#administration">Administration</a><br>
+                    <a href="#galerie">Galerie</a><br>
+                    <!--<a href="#equipe">Notre Équipe</a><br>
+                    <a href="#partenaire">Nos Partenaires</a><br>-->
+                    <a href="#philanthropie">Liens Philanthropie</a><br>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <nav class="lang">
+                    <div class="" value="en">English</div>
+                    <div class="" value="fr">French</div>
+                    <div class="" value="de">German</div>
+                    <div class="" value="cn">Chinese</div>
+                    <div class="" value="ru">Russian</div>
+                </nav>
+            </header>
+            <div class="space"></div>
+        </div>
+        <div class="espoir">
+            <div class="content slide">
+            <!-- HOME -->
+            <section id="home">
+                <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                        <h1>F.R.E.E</h1>
+                        <h3>FIDUCIAIRE & FAMILY OFFICE<span> </span></h3>
+
+                        <br><p class="hi">Basée sur la riviera vaudoise, F.R.E.E. est votre entreprise de services.<br /> Notre objectif : répondre à toutes vos exigences en accomplissant des tâches que vous n’êtes pas en mesure d’administrer ou ne désirez pas accomplir.<br /> Nos principes : vous apporter des conseils objectifs et des solutions sur mesure en matière de fiscalité, droit, gouvernance, éducation et services en tout genre.<br /> Nous travaillons en étroite collaboration avec des professionnels reconnus. Nos juristes, experts-comptables, expert-fiscaux et experts en assurances vous assurent la protection optimale de votre patrimoine et simplifient votre quotidien.<!-- Add code here that should appear in the content block of all new pages --></p>
+                    </div>
+                </div>
+            </section>
+            <!-- FAMILY OFFICE -->
+            <section id="foffice">
+                <div class="family-office"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                        <h3>Family Office<span> </span></h3>
+                        <br><p class="hi">- Prise en charge domestique, administrative et fiscale de toute personne, notamment des personnes âgées, avec la mise en place d’une structure d’intendance et de services totalement étudiés et adaptés au sein de votre domicile.<br /> - Accueil, encadrement, orientation et prise en charge des familles expatriées ou non expatriées pour toutes démarches administratives, (déclarations de procédures, assurances, impôt, etc...)<br /> - Organisation de divers événements extraordinaires (célébrations, mariage, anniversaires...)<br /> - Gouvernance et conciergerie de haute qualité assurés.<br /> - Mise à votre disposition d'un secrétariat à distance pour la gestion de vos appels professionnels, et prises des messages, en votre absence, ou en cas d'indisponibilité.<br /> - Planification et conseils réservations de voyages de rêve<br /> - Service de baby-sitting<br /> - Transfert aéroport avec chauffeur privé<br /> - Transfert en hélicoptère<br /> - Location bateaux, limousine, automobiles de luxe<br /> - Coaching et encadrement privé</p>
+                    </div>
+                </div>
+            </section>
+            <!-- IMMOBILIER -->
+            <section id="immobilier">
+                <div class="slide" id="slide2" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                        <h3>Immobilier<span> </span></h3>
+                        <br><p class="hi">- Recherche de biens immobiliers, terrains, chalets à la saison, location ou vente<br /> - Optimisation de financement hypothécaire<br /> - Gestion de tous travaux de transformation et/ou rénovation et suivi de chantier<br /> - Conseils et détails des finitions aménagement intérieur et extérieur<br /> - Achat de mobiliers et conseils, avec prise en charge de la décoration d'intérieur <br /> - Conciergerie, entretiens intérieurs et extérieurs<br /> - Mandat de représentation avec pouvoir de substitution pour suivi administratif et technique d'un projet de construction<br /> - Encadrement et supervision de tous travaux en tout genre, en votre absence<br /> - Service de pointe assuré s'agissant des finitions d'un chantier, toutes hautes exigences requises.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- COMPTABILITE -->
+            <section id="comptabilite">
+                <div class="slide" id="slide3" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                        <h3>Comptabilité<span> </span></h3>
+                        <br><p class="hi">- Mise en place plan comptable et structure d'orientation comptable<br /> - Tenue de la comptabilité générale personnes physiques et personnes morales<br /> - Bouclement des comptes et clôtures intermédiaires<br /> - Comptes annuels selon CO, droit fiscal et nouveau droit comptable<br /> - Etats financiers selon les normes Swiss GAAP RPC (True &amp; Fair View)<br /> - Tableau de flux de fonds et financement, budget de trésorerie et prévisionnel<br /> - Traitement et comptabilité des salaires<br /> - Planification financière et calcul des investissements<br /> - Analyse financière et évaluation d'entreprise</p>
+                    </div>
+                </div>
+            </section>
+            <!-- FISCALITE -->
+            <section id="fiscalite">
+                <div class="slide" id="slide4" data-slide="1" data-stellar-background-ratio="0.1"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                        <h3>Fiscalité<span> </span></h3>
+                        <br><p class="hi">- Déclaration fiscale personnes physiques, personnes morales<br /> - Calcul de l'impôt<br /> - Modification des acomptes<br /> - Réclamation<br /> - Planification fiscale<br /> - Conseils d'optimisation fiscale<br /> - Établissement des décomptes TVA<br /> - Déclaration pour l’imposition des gains Immobiliers<br /> - Amnistie fiscale<br /> - Procédure de remboursement de l'impôt anticipé<br /> - Procédure de déclaration de l'impôt à la source</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ADMINISTRATION -->
+            <section id="administration">
+                <div class="slide" id="slide5" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                        <h3>Administration<span> </span></h3>
+                        <br><p class="hi">- Domiciliation d'entreprise<br /> - Prise en charge des dossiers de tutelle et curatelle<br /> - Trafic des paiements<br /> - Suivi du contentieux relativement à la loi sur la dette poursuite et faillite<br /> - Rédaction, traduction et toute procédure administrative<br /> - Établissement des fiches de salaires et certificats de salaires<br /> - En collaboration avec trois associations et fondations, dont les liens figurent sur notre site, nous les aidons et encourageons la philanthropie, et ainsi mettons à votre disposition les moyens accessibles de faire des dons et/ou parrainages</p>
+                    </div>
+                </div>
+            </section>
+            <!-- GALERIE -->
+            <section id="galerie">
+                <div class="fea-video" id="demo">
+                    <!--<a class="popup-with-zoom-anim" href="#small-dialog"> </a>-->
+                    <a data-lightbox="example-1" href="http://www.youtube.com/embed/eRNkYFFgDHs"><img class="example-image"  alt=""/></a>
+
+                    <br><p>Regarder notre vidéo</p>
+                </div>
+                <div class="blog-info">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </section>
+            <!-- NOTRE EQUIPE -->
+            <section id="equipe">
+                <div class="slide" id="slide6" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </section>
+            <!-- NOS PARTENAIRES -->
+            <section id="partenaire">
+                <div class="slide" id="slide7" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </section>
+            <!-- LIENS PHILANTROPIE -->
+            <section id="philanthropie">
+                <div class="slide" id="slide8" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="blog-info">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACT -->
+            <section id="contact">
+                <div class="slide" id="slide9" data-slide="1" data-stellar-background-ratio="0.5"></div>
+                <div class="get-intouch">
+                    <div class="wrap">
+                        <h3>Contact<span> </span></h3>
+                        <div class="get-intouch-grids">
+                            <div class="get-intouch-left-address">
+                                <h5>Pour envoyer un message directement à notre bureau.</h5><br>
+                                <p>Rue du Port 29</p>
+                                <p>Clarens, CH - 18015</p>
+                                <p>T. +41 21 922 01 30</p>
+                                <p>F. +41 21 922 01 31</p>
+                                <p><a href="mailto:info@free-ffo.ch">info@free-ffo.ch</a></p>
+                            </div>
+
+                            <div class="get-intouch-center-form">
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+        </div>
+        <div class="map">
+            <iframe width="100%" height="200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.3361257581614!2d6.897033700000012!3d46.442036599999966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e9b6acb37952d%3A0x35565ed8a974f651!2sRue+du+Port+29!5e0!3m2!1sfr!2s!4v1395858140037"> </iframe>
+        </div>
+        </div>
+        <!--//End-getintouch-->
+        </section>
+            <!--start-copy-right-->
+            <div class="copy-right">
+                <div class="wrap width-full">
+                    <div class="copy-right-left">
+                        <p>&#169; 2014 <span>Setrino</span> All Rights Reserved.</p>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+            <!--smooth-scrlling-->
+
+            </div>
+            <!--//smoth-scrlling-->
+            <!---//End-content-->
+            <!--//wrap-->
+        </div>
+    </div>
+    <%- include scripts %>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+                var target = this.hash,
+                        $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 1000, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
     </body>
 </html>
-
