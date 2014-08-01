@@ -3,10 +3,12 @@ var router = express.Router();
 var port    =   process.env.PORT || 8080;
 
 router.get('/', function(req, res){
+    console.log(req.cookies.lang);
    res.setLocale(req.cookies.lang);
    res.render('index',{
-       title: res.__('AAAA'),
-       supplies: ['mop', 'broom', 'duster']
+       //Pour envoyer un message directement à notre bureau.
+       supplies: ['mop', 'broom', 'duster'],
+       sendMessage: res.__('Message')
    });
 });
 

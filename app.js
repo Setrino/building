@@ -21,7 +21,7 @@ app.set('view engine', 'html');
 
 i18n.configure({
     // setup some locales - other locales default to en silently
-    locales:['en', 'ru'],
+    locales:['en', 'ru', 'fr', 'de', 'cn'],
 
     // where to store json files - defaults to './locales' relative to modules directory
     directory: __dirname + '/locales',
