@@ -1,3 +1,12 @@
 {
-	"Message": "Send a message straight to our office."
+	"Message": "Send a message straight to our office.",
+	"Home": "Home",
+	"Office": "Office",
+	"Building": "Building",
+	"Accounting": "Accounting",
+	"Law": "Law",
+	"Administration": "Administration",
+	"Gallery": "Gallery",
+	"Philantropy": "Philantropy",
+	"Contact": "Contact"
 }

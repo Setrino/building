@@ -1,3 +1,12 @@
 {
-	"Message": "Um eine Nachricht direkt an unser Büro senden."
+	"Message": "Um eine Nachricht direkt an unser Büro senden.",
+	"Home": "Home",
+	"Office": "Office",
+	"Building": "Gebäude",
+	"Accounting": "Buchhaltung",
+	"Law": "Gesetz",
+	"Administration": "Administration",
+	"Gallery": "Galerie",
+	"Philantropy": "Philanthropy",
+	"Contact": "Kontakt"
 }

@@ -1,3 +1,12 @@
 {
-	"Message": "要發送的消息直接到我們的辦公室。"
+	"Message": "要發送的消息直接到我們的辦公室。",
+	"Home": "家",
+	"Office": "办公室",
+	"Building": "楼",
+	"Accounting": "会计学",
+	"Law": "公司法",
+	"Administration": "管理",
+	"Gallery": "画廊",
+	"Philantropy": "慈善事业",
+	"Contact": "联系方式"
 }

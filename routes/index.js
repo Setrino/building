@@ -8,7 +8,16 @@ router.get('/', function(req, res){
    res.render('index',{
        //Pour envoyer un message directement à notre bureau.
        supplies: ['mop', 'broom', 'duster'],
-       sendMessage: res.__('Message')
+       sendMessage: res.__('Message'),
+       home: res.__('Home'),
+       office: res.__('Office'),
+       building: res.__('Building'),
+       accounting: res.__('Accounting'),
+       law: res.__('Law'),
+       administration: res.__('Administration'),
+       gallery: res.__('Gallery'),
+       philantropy: res.__('Philantropy'),
+       contact: res.__('Contact')
    });
 });
 
